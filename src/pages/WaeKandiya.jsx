@@ -1,0 +1,26 @@
+import React from 'react';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
+
+const WaeKandiya = () => {
+  return (
+    <div id="page-wrapper">
+      <Header />
+      <article id="main">
+        <header>
+          <h2>වෑ කණ්ඩිය</h2>
+          <p>මෙම පිටුව සඳහා අන්තර්ගතය පසුව එක් කළ හැක.</p>
+        </header>
+        <section className="wrapper style5">
+          <div className="inner">
+            <h3>වෑ කණ්ඩිය</h3>
+            <p>මෙම පිටුව සඳහා අන්තර්ගතය පසුව එක් කළ හැක.</p>
+          </div>
+        </section>
+      </article>
+      <Footer />
+    </div>
+  );
+};
+
+export default WaeKandiya;
