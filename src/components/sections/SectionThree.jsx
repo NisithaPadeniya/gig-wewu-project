@@ -3,38 +3,44 @@ import React from 'react';
 const SectionThree = React.memo(() => {
   return (
     <section id="three" className="wrapper style3 special">
-      <div className="inner">
+      <div className="inner sinhala-page" lang="si">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-          fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+          <p>
+            සහ සුද්දෙන් ම කියනවානම් මහා සිංහළේ වැව් පද්ධතියේ අවසානය ලඟා වී ඇත.
+          </p>
+          <p>
+            මේ ගෙවෙන්නේ අතිශය පරිසර හිතකාමී වැව් පද්ධතියේ අවසන් කාලයයි.
+          </p>
+          <p>
+            මේ වන විට අපේ වැව් පද්ධතියම අඩපණ වී අබ්බාගාත වී අසරණ වී හමාරය.
+          </p>
+          <p>
+            එදා කිරීට බලය තහවුරු කරගැනීමට බිරිතානි ආණ්ඩුකාරයන් ඉමහත්
+            පරිශ්‍රමයකින් විනාස කරන්නට තැතනූ වැව් පද්ධතියේ අවසානය පසුකාලීන
+            කලු සුද්දන් සහ අනුකාරක බටහිර උගතුන් ගේ වෑයමින් සාර්ථක වෙමින් පවතී.
+          </p>
+          <p>
+            මේ විනාස වෙන්නේ වැව් පද්ධතිය පමණක් නොව වැව් මුලික කරගත් ඒ මහා
+            සංස්කෘතියයි.
+          </p>
+          <p>
+            බිරිතාණි ආක්‍රමණිකයන් එදා පටන් දත කෑවේ ඒ සංස්කෘතිය විනාසකරන්නට බව
+            බිරිතාණි ගතියට ත් නූතන සංස්කෘතිය යැයි හඳුනා ගන්නා සංස්කෘතියේ
+            අතරමං වී ඇති බොහෝ දෙනෙකුට නොතේරේ.
+          </p>
+          <p>
+            වැව් විනාස කිරීම සංස්කෘතිය විනාස කිරීමේ එක මූලිකම ක්‍රියා පටිපාටියක්
+            වියයුතු බව අධිරාජ්‍ය ව්‍යාප්තවාදී අරමුණින් පැමිණි බිරිතාණි
+            ආණ්ඩුකාරයන් සියවස් ගණනකට පෙර ම දැන සිටියහ.
+          </p>
+          <p>
+            මහා ශිෂ්ඨාචාරයක ජීවනාලිය වු වැව හිතාමතා විනාස කිරීම වාවා ගත නොහැකිය.
+          </p>
+          <p>
+            රැකගැනීමට කළ යුතු දේවල් එමටය ~ රැකගැනීමට කළ හැකි කළ යුතු දෙයක් වහ
+            වහා කළ යුතුය ~ යුතුකමක් වශයෙන් මෙය ලියා තබමි.
+          </p>
         </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-          </li>
-        </ul>
       </div>
     </section>
   );
