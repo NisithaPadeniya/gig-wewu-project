@@ -3,18 +3,21 @@ import React from 'react';
 const SectionOne = React.memo(() => {
   return (
     <section id="one" className="wrapper style1 special">
-      <div className="inner">
+      <div className="inner sinhala-page" lang="si">
         <header className="major">
-          <h2>Arcu aliquet vel lobortis ata nisl<br />
-          eget augue amet aliquet nisl cep donec</h2>
-          <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-          fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+          <h2>පූජා වෙඩිල්ල</h2>
+          <p>මේ දැනුම මා රැස් කලේ රට පුරා තැන තැන අස්සක් මුල්ලක් නෑර ඇවිදිමින්ය.</p>
+          <p>මේ දැනුම සහ තොරතුරු ලබා දුන්නේ පිටිසර ගැමියන් ය.</p>
+          <p>ඔවුන් කිසි කලෙක මාගේ මතකයෙන් නොමියෙන අතර මේ දැනුම ඔවුන්ට උපහාරයක් ම වේවා.</p>
+          <p>දැනුම එක් රැස් කර ක්‍රමවත් ව ඉදිරිපත් කිරීමට පොත පතද උපකාරී විය.</p>
+          <p>
+            මා කලේ තැන තැන ඇවිද තොරතුරු රැස් කිරීමත් සමහරක් පොත පත කියවා එම
+            තොරතුරු එක් තැනකට ගෙන ඒමත් පමණි.
+          </p>
+          <p>ඒ දැනුම බෙදා දෙන්නට ද කැමැත්තමි.</p>
+          <p>මෙම දැනුම මා හට අයිති දැනුමක් නොවේ.</p>
+          <p>දේශීය දැනුම නිර්මාණය කරන්නට පුලුවං නම් කොච්චර පිනක්ද...</p>
         </header>
-        <ul className="icons major">
-          <li><span className="icon fa-gem major style1"><span className="label">Lorem</span></span></li>
-          <li><span className="icon fa-heart major style2"><span className="label">Ipsum</span></span></li>
-          <li><span className="icon solid fa-code major style3"><span className="label">Dolor</span></span></li>
-        </ul>
       </div>
     </section>
   );

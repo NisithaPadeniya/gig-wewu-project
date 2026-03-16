@@ -2,35 +2,86 @@ import React from 'react';
 
 const SectionTwo = React.memo(() => {
   return (
-    <section id="two" className="wrapper alt style2">
+    <section id="two" className="wrapper alt style2 sinhala-page" lang="si">
       <section className="spotlight">
         <div className="image">
-          <img src="/images/pic01.jpg" alt="Spotlight 1" />
+          <img src="/images/pic01.jpg" alt="වැව පිළිබඳ දසුන 1" />
         </div>
         <div className="content">
-          <h2>Magna primis lobortis<br />
-          sed ullamcorper</h2>
-          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          <p>
+            විදේශිකයන් විසින් හඳුන්වා දුන් විෂය නිර්දේෂ වලට සීමාවූ පාසැල්
+            අධ්‍යාපනය මුල් කොටගත් සමාජයක දශක ගණනාවක් හැදී වැඩෙන මිනිසුන් හට
+            වැව යනු බැස නාන්නට පුලුවන් තවත් එක් ටැංකියක් ය tank හෝ ජලාශයක්
+            reservoir ය පටු යන අදහස ඇති බව පෙනේ.
+          </p>
+          <p>වැව් තැනුවේ මිනිසුන් විසිනි. ඒ නිසා වැව lake එකක් ද නොවේ.</p>
+          <p>
+            විශේෂයෙන්ම වැව් බැඳි රටතොටෙන් ඈත ජීවත් වන පිරිසට හා බටහිර පන්නයට
+            කැමති ගමේ ගොඩේ ජීවත් වන අයවලුන් බොහොමයකට එවැනි ම අදහස් තිබෙනු
+            දක්නට ඇත.
+          </p>
+          <p>
+            වැවට සමාන පදයක් ලෙස ඉංග්‍රීසි භාෂාවේ lake | tank | reservoir යන
+            පද භාවිතා කරයි. මේ පද හරඹය සම්පූර්ණයෙන්ම වැරදිය.
+          </p>
+          <p>
+            මේ පද වලින් වැවෙ ක කාර්ය භාරය වසංකරනවා පමණක් නොව වැවෙ ක
+            වටිනාකමද නැති කර දමයි.
+          </p>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src="/images/pic02.jpg" alt="Spotlight 2" />
+          <img src="/images/pic02.jpg" alt="වැව පිළිබඳ දසුන 2" />
         </div>
         <div className="content">
-          <h2>Tortor dolore feugiat<br />
-          elementum magna</h2>
-          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          <p>
+            වැව යනු වතුර එකතුවෙන තැනක් වතුර පුරවා උවමනා තැනට බෙදාහරින තැනක්
+            පමණක් නොවේ.
+          </p>
+          <p>
+            මෙම දැනුම එක් රැස් කරන්නට එලැඹෙන විට මට වයස අවුරුදු විස්සක් පමණ විය.
+          </p>
+          <p>
+            හැතැප්ම සිය ගනනකට වැව් නොපිහිටි ඉසව්වක කුඩා කල සිට හැදී වැඩුනු
+            නිසා ත් පාසැල් වලින් ඉගැන්වූ විෂය නිර්දේශ මඟින් මනස කොටුකර තැබු
+            නිසා ත් වැව් ගැන මා තුල ද වැඩි දැනුමක් තිබුනේ නැත.
+          </p>
+          <p>
+            කුඩාකල දිනපතා වික්ටෝරියා ජලාශයේ නාන්නට ගිය මට අම්මා කාරණා කීපයක්
+            කියා දුන්නාය. අනුරාධපුරයේ සහ පොළොන්නරුවේ වැව් පිහිටා ඇති බවත්
+            අතීත රජවරු සැදූ වැව් දහස් ගණනක් රටේ ඇති බවත් ඇය කියා සිටියාය.
+          </p>
+          <p>
+            බොහෝ වැව් වික්ටෝරියාවට වඩා විශාල බවත් වික්ටෝරියාව සාදන කාලයේ දී
+            මෙන් වැව් තැනු කාලයේ මිනිසුන්ට මිනිසුන්ගේ ඉඩම් වලට හෝ කැලෑවට හානි
+            නොවූ බව ඈ කියා දුන්නාය.
+          </p>
+          <p>
+            වැව් පිරෙන්නේ අහස් දියෙන් බැව් කියා දුන් ඈ ගලන ගඟක් හරහා වේල්ලක්
+            බැඳීමෙන් ජලාශ තැනෙන බව වික්ටෝරියා ජලාශය පෙන්වමින් කියා දුන්නාය.
+            වැව් ගැන ඇය දැන සිටියේ එපමණක් ම විය.
+          </p>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src="/images/pic03.jpg" alt="Spotlight 3" />
+          <img src="/images/pic03.jpg" alt="වැව පිළිබඳ දසුන 3" />
         </div>
         <div className="content">
-          <h2>Augue eleifend aliquet<br />
-          sed condimentum</h2>
-          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          <p>
+            එකළ අප ජීවත් වූ තෙල්දෙණිය බඹරගල ආසන්නයේම වැවේ ගම නම් ගමක් විය.
+          </p>
+          <p>
+            වික්ටෝරියාව ජලාශයක් නම් වැවේ ගමට ජලාශයේ ගම කියන්නේ නැතුව වැවේ ගම
+            කියන්නේ ඇයි දැයි මාහට කුඩාකල සිටම ගැටලුවක් විය.
+          </p>
+          <p>එදා මෙන්ම අම්මා ට අද ද එයට පිලිතුරක් නැත.</p>
+          <p>මේ ගැටලුව ලිහා ගැනීමට මට වසර ගණනාවක් ගතවිනි.</p>
+          <p>
+            අපේ ඉතිහාසය වසංකලා මෙන්ම ඉතිහාසය සහ ශිෂ්ඨාචාරයේ එක් වැදගත්ම
+            අංගයක් වන වැව ද අපෙන් වසං කර ඇත.
+          </p>
         </div>
       </section>
     </section>
