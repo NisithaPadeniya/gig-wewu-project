@@ -1,10 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
 @import './assets/css/fontawesome-all.min.css';
 @import './assets/css/main.css';
 @import './assets/css/noscript.css';
 
 .App {
   min-height: 100vh;
+}
+
+.sinhala-text,
+.sinhala-page,
+.sinhala-page h1,
+.sinhala-page h2,
+.sinhala-page h3,
+.sinhala-page h4,
+.sinhala-page h5,
+.sinhala-page h6,
+#menu .sinhala-text {
+  font-family: 'Noto Sans Sinhala', 'Nirmala UI', 'Iskoola Pota', sans-serif;
+  letter-spacing: 0;
+}
+
+.sinhala-page {
+  line-height: 1.85;
+}
+
+.sinhala-page header p,
+.sinhala-page .inner p {
+  font-size: 1.05rem;
+}
+
+#menu .sinhala-text {
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 .route-shell {

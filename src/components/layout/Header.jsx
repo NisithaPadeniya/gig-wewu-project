@@ -61,15 +61,15 @@ const Header = React.memo(() => {
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/generic" onClick={closeMenu}>Generic</Link></li>
             <li><Link to="/elements" onClick={closeMenu}>Elements</Link></li>
-            <li><Link to="/mankada" onClick={closeMenu}>මංකඩ</Link></li>
-            <li><Link to="/thawulla" onClick={closeMenu}>තාවුල්ල</Link></li>
-            <li><Link to="/wae-kandiya" onClick={closeMenu}>වෑ කණ්ඩිය</Link></li>
-            <li><Link to="/waew-thanawima" onClick={closeMenu}>වැව් තැනවීම</Link></li>
-            <li><Link to="/waweka-mahima" onClick={closeMenu}>වැවෙක මහිම</Link></li>
-            <li><Link to="/europiya-wartha" onClick={closeMenu}>යුරෝපීය වාර්තා</Link></li>
-            <li><Link to="/waew-namawaliya" onClick={closeMenu}>වැව් නාමාවලිය</Link></li>
-            <li><Link to="/pin-panduru" onClick={closeMenu}>පිං පඬුරු</Link></li>
-            <li><Link to="/jathiyata-shasanayata" onClick={closeMenu}>ජාතිය ට ශාසනය ට</Link></li>
+            <li><Link to="/mankada" onClick={closeMenu} className="sinhala-text" lang="si">මංකඩ</Link></li>
+            <li><Link to="/thawulla" onClick={closeMenu} className="sinhala-text" lang="si">තාවුල්ල</Link></li>
+            <li><Link to="/wae-kandiya" onClick={closeMenu} className="sinhala-text" lang="si">වෑ කණ්ඩිය</Link></li>
+            <li><Link to="/waew-thanawima" onClick={closeMenu} className="sinhala-text" lang="si">වැව් තැනවීම</Link></li>
+            <li><Link to="/waweka-mahima" onClick={closeMenu} className="sinhala-text" lang="si">වැවෙක මහිම</Link></li>
+            <li><Link to="/europiya-wartha" onClick={closeMenu} className="sinhala-text" lang="si">යුරෝපීය වාර්තා</Link></li>
+            <li><Link to="/waew-namawaliya" onClick={closeMenu} className="sinhala-text" lang="si">වැව් නාමාවලිය</Link></li>
+            <li><Link to="/pin-panduru" onClick={closeMenu} className="sinhala-text" lang="si">පිං පඬුරු</Link></li>
+            <li><Link to="/jathiyata-shasanayata" onClick={closeMenu} className="sinhala-text" lang="si">ජාතිය ට ශාසනය ට</Link></li>
             <li><a href="#" onClick={(e) => { e.preventDefault(); closeMenu(); }}>Sign Up</a></li>
             <li><a href="#" onClick={(e) => { e.preventDefault(); closeMenu(); }}>Log In</a></li>
           </ul>
