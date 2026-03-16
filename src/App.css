@@ -30,9 +30,83 @@
   font-size: 1.05rem;
 }
 
+#banner .inner.sinhala-page {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+#banner .inner.sinhala-page p {
+  max-width: 68rem;
+  margin: 1rem auto 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+#banner .more.sinhala-text,
+#banner .more {
+  font-family: 'Noto Sans Sinhala', 'Nirmala UI', 'Iskoola Pota', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0;
+}
+
+#one .sinhala-page header.major p {
+  margin: 0.55rem auto 0;
+  max-width: 62rem;
+}
+
+#three .sinhala-page header.major p {
+  margin: 0.55rem auto 0;
+  max-width: 62rem;
+}
+
+#cta .inner.sinhala-page {
+  display: block;
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+#cta .inner.sinhala-page header {
+  width: 100%;
+  max-width: 66rem;
+  margin: 0 auto;
+  padding-right: 0;
+  text-align: center;
+}
+
+#cta .inner.sinhala-page header p {
+  margin: 0.8rem auto 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 #menu .sinhala-text {
   font-size: 0.96rem;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 736px) {
+  #banner .inner.sinhala-page {
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+  #banner .inner.sinhala-page p,
+  #one .sinhala-page header.major p,
+  #three .sinhala-page header.major p,
+  #cta .inner.sinhala-page header {
+    max-width: 100%;
+  }
+
+  #banner .more.sinhala-text,
+  #banner .more {
+    font-size: 1rem;
+  }
 }
 
 .route-shell {

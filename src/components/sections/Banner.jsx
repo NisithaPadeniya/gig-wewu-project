@@ -23,11 +23,11 @@ const Banner = React.memo(() => {
           කණ්ඨිරවායමාන ශ්‍රී සඬර්‍මවර චක්‍රවර්තිස්වාමී වූ උතුම් ගෝතම බුදුන්
           වහන්සේ නාමයට උපහාර වම්හ
         </p>
-        <ul className="actions special">
+        {/* <ul className="actions special">
           <li><a href="#one" className="button primary" onClick={handleScrollClick}>ඉදිරියට</a></li>
-        </ul>
+        </ul> */}
       </div>
-      <a href="#one" className="more scrolly" onClick={handleScrollClick}>වැඩිදුර</a>
+      <a href="#one" className="more scrolly" onClick={handleScrollClick}>ඉදිරියට</a>
     </section>
   );
 });
