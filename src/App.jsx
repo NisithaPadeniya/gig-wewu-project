@@ -25,23 +25,23 @@ function AppRoutes() {
   const [transitionStage, setTransitionStage] = useState('route-enter');
 
   useEffect(() => {
-    document.body.classList.add('is-preload');
+    const isLandingPage = displayLocation.pathname === '/';
+
+    if (isLandingPage) {
+      document.body.classList.add('is-preload');
+    } else {
+      document.body.classList.remove('is-preload');
+    }
 
     const timeoutId = window.setTimeout(() => {
       document.body.classList.remove('is-preload');
     }, 100);
 
-    return () => {
-      window.clearTimeout(timeoutId);
-      document.body.classList.remove('is-preload');
-    };
-  }, []);
-
-  useEffect(() => {
-    const isLandingPage = displayLocation.pathname === '/';
     document.body.classList.toggle('landing', isLandingPage);
 
     return () => {
+      window.clearTimeout(timeoutId);
+      document.body.classList.remove('is-preload');
       document.body.classList.remove('landing');
     };
   }, [displayLocation.pathname]);
