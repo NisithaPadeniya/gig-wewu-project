@@ -5,6 +5,7 @@ import Generic from './pages/Generic';
 import Elements from './pages/Elements';
 import Thawulla from './pages/Thawulla';
 import WaeKandiya from './pages/WaeKandiya';
+import WaeAngopanga from './pages/WaeAngopanga';
 import WaewThanawima from './pages/WaewThanawima';
 import WawekaMahima from './pages/WawekaMahima';
 import EuropiyaWartha from './pages/EuropiyaWartha';
@@ -69,6 +70,7 @@ function AppRoutes() {
         <Route path="/elements" element={<Elements />} />
         <Route path="/thawulla" element={<Thawulla />} />
         <Route path="/wae-kandiya" element={<WaeKandiya />} />
+        <Route path="/wae-angopanga" element={<WaeAngopanga />} />
         <Route path="/waew-thanawima" element={<WaewThanawima />} />
         <Route path="/waweka-mahima" element={<WawekaMahima />} />
         <Route path="/europiya-wartha" element={<EuropiyaWartha />} />
