@@ -1,18 +1,45 @@
 import { useEffect, useCallback } from 'react';
 
-export const useSmoothScroll = (offset = 0) => {
+const easeInOutCubic = (t) => {
+  if (t < 0.5) {
+    return 4 * t * t * t;
+  }
+
+  return 1 - Math.pow(-2 * t + 2, 3) / 2;
+};
+
+export const useSmoothScroll = (offset = 0, duration = 1500) => {
+  const getOffset = useCallback(() => {
+    return typeof offset === 'function' ? offset() : offset;
+  }, [offset]);
+
   const scrollToElement = useCallback((elementId) => {
     const element = document.getElementById(elementId);
-    if (element) {
-      const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+    if (!element) {
+      return;
     }
-  }, [offset]);
+
+    const startPosition = window.scrollY;
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const targetPosition = Math.max(elementPosition - getOffset(), 0);
+    const travelDistance = targetPosition - startPosition;
+    const startTime = performance.now();
+
+    const step = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeInOutCubic(progress);
+
+      window.scrollTo(0, startPosition + travelDistance * easedProgress);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  }, [duration, getOffset]);
 
   useEffect(() => {
     const handleClick = (e) => {

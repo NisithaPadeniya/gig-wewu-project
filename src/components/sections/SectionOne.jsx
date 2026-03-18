@@ -1,23 +1,38 @@
 import React from 'react';
 
+const priorities = [
+  'නිවැරදි අධ්‍යාපන ක්‍රමවේද යොදා ගැනීමට',
+  'ගිලිහී යන මානව ගුණාංග නැවත ඇති කිරීමට',
+  'පාරිසරික සම්පත් අරපිරිමැස්මෙන් පාවිච්චි කිරීමට',
+];
+
 const SectionOne = React.memo(() => {
   return (
-    <section id="one" className="wrapper style1 special">
-      <div className="inner sinhala-page" lang="si">
-        <header className="major">
-          <h2>පූජා වෙඩිල්ල</h2>
-          <p>මේ දැනුම මා රැස් කලේ රට පුරා තැන තැන අස්සක් මුල්ලක් නෑර ඇවිදිමින්ය.</p>
-          <p>මේ දැනුම සහ තොරතුරු ලබා දුන්නේ පිටිසර ගැමියන් ය.</p>
-          <p>ඔවුන් කිසි කලෙක මාගේ මතකයෙන් නොමියෙන අතර මේ දැනුම ඔවුන්ට උපහාරයක් ම වේවා.</p>
-          <p>දැනුම එක් රැස් කර ක්‍රමවත් ව ඉදිරිපත් කිරීමට පොත පතද උපකාරී විය.</p>
-          <p>
-            මා කලේ තැන තැන ඇවිද තොරතුරු රැස් කිරීමත් සමහරක් පොත පත කියවා එම
-            තොරතුරු එක් තැනකට ගෙන ඒමත් පමණි.
-          </p>
-          <p>ඒ දැනුම බෙදා දෙන්නට ද කැමැත්තමි.</p>
-          <p>මෙම දැනුම මා හට අයිති දැනුමක් නොවේ.</p>
-          <p>දේශීය දැනුම නිර්මාණය කරන්නට පුලුවං නම් කොච්චර පිනක්ද...</p>
+    <section id="one" className="home-vision">
+      <div className="home-vision__inner sinhala-page" lang="si">
+        <div className="home-vision__divider" aria-hidden="true" />
+
+        <header className="home-vision__header">
+          <h1>ශ්‍රී ලංකාවේ සුවිසල් සමාජීය ආර්ථික මෙන්ම දේශපාලනික වෙනස්කම් සිදුවිය යුතු යැයි මම විශ්වාස කරමි</h1>
         </header>
+
+        <div className="home-vision__divider" aria-hidden="true" />
+
+        <section className="home-vision__block" aria-labelledby="home-vision-subtitle">
+          <p id="home-vision-subtitle" className="home-vision__lead">
+            ඒ සඳහා රටේ
+          </p>
+
+          <ul className="home-vision__list">
+            {priorities.map((item) => (
+              <li key={item}>~ {item}</li>
+            ))}
+          </ul>
+
+          <p className="home-vision__emphasis">
+            වහ වහා අවධානය යොමු කර විධි විධාන සකස් කළ යුතු වේ
+          </p>
+        </section>
       </div>
     </section>
   );
