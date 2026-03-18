@@ -31,9 +31,7 @@ const WaeKandiya = () => {
 
             <section className="waekandiya-links">
               <Link to="/wae-angopanga">වැවෙ ක අංගෝපාංග</Link>
-              <a href="#" onClick={(event) => event.preventDefault()}>
-                Placeholder Link 2
-              </a>
+              <Link to="/waew-kare-gaha-kola">වැව් කරේ ගහ කොළ</Link>
             </section>
 
             <div className="waekandiya-image">

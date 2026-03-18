@@ -461,6 +461,47 @@ body.landing #footer {
   letter-spacing: 0;
 }
 
+.wawekamahima-section {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.wawekamahima-section h3 {
+  margin-bottom: 1.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wawekamahima-section p {
+  margin: 0 0 1.15rem;
+  font-size: 1.04rem;
+  line-height: 2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wawekamahima-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.wawekamahima-link a {
+  min-width: 18rem;
+  padding: 1rem 1.4rem;
+  border: 1px solid #2aa79c;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #21b2a6, #1b8f87);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0.8rem 1.8rem rgba(33, 178, 166, 0.22);
+}
+
+.wawekamahima-link a:hover {
+  background: linear-gradient(135deg, #2bc2b6, #21a39a);
+}
+
 @media screen and (max-width: 736px) {
   #banner .inner.sinhala-page {
     max-width: 100%;
@@ -568,6 +609,10 @@ body.landing #footer {
 
   .waewthanawima-media img {
     min-height: 16rem;
+  }
+
+  .wawekamahima-link a {
+    width: 100%;
   }
 }
 
