@@ -13,6 +13,7 @@ import EuropiyaWartha from './pages/EuropiyaWartha';
 import WaewNamawaliya from './pages/WaewNamawaliya';
 import PinPanduru from './pages/PinPanduru';
 import JathiyataShasanayata from './pages/JathiyataShasanayata';
+import JathiyataShasanayataPost from './pages/JathiyataShasanayataPost';
 import './App.css';
 import './assets/css/main.css';
 
@@ -79,6 +80,10 @@ function AppRoutes() {
         <Route path="/waew-namawaliya" element={<WaewNamawaliya />} />
         <Route path="/pin-panduru" element={<PinPanduru />} />
         <Route path="/jathiyata-shasanayata" element={<JathiyataShasanayata />} />
+        <Route
+          path="/jathiyata-shasanayata/example-post-1"
+          element={<JathiyataShasanayataPost />}
+        />
       </Routes>
     </div>
   );

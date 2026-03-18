@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
@@ -9,7 +10,15 @@ const openingVerse = [
   'ධීර කීර්ති බල වී මැති ~ කඩවර දෙවිඳුන් වඩින්ඩ',
 ];
 
-const posts = [];
+const posts = [
+  {
+    id: 'example-post-1',
+    slug: 'example-post-1',
+    title: 'උදාහරණ ලිපිය',
+    excerpt:
+      'මෙය නියැදි සටහනකි. ඉදිරියේ දී ඔබ ලබා දෙන සම්පූර්ණ ලිපි මෙවැනි කාඩ් ආකාරයෙන් මෙහි පෙන්විය හැක.',
+  },
+];
 
 const JathiyataShasanayata = () => {
   return (
@@ -31,10 +40,14 @@ const JathiyataShasanayata = () => {
 
             <section className="jss-posts">
               {posts.map((post) => (
-                <article key={post.id} className="jss-post-card">
+                <Link
+                  key={post.id}
+                  to={`/jathiyata-shasanayata/${post.slug}`}
+                  className="jss-post-card"
+                >
                   <h4>{post.title}</h4>
                   <p>{post.excerpt}</p>
-                </article>
+                </Link>
               ))}
             </section>
           </div>
