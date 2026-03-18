@@ -90,6 +90,111 @@
   line-height: 1.6;
 }
 
+.home-vision {
+  min-height: calc(100vh - 4.5rem);
+  padding: 7rem 1.5rem 4rem;
+  background-color: #2bc2b6;
+}
+
+.home-vision__inner {
+  width: min(100%, 76rem);
+  margin: 0 auto;
+  text-align: center;
+  color: #98291f;
+}
+
+.home-vision__divider {
+  width: 100%;
+  height: 3px;
+  margin: 0 auto 2.25rem;
+  background: linear-gradient(90deg, rgba(87, 87, 87, 0.8), rgba(138, 138, 138, 0.65));
+}
+
+.home-vision__header h1 {
+  margin: 0 auto 2.25rem;
+  max-width: 64rem;
+  color: #a2281d;
+  font-size: clamp(1.15rem, 1.75vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.95;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.home-vision__block {
+  max-width: 56rem;
+  margin: 0 auto 2.5rem;
+}
+
+.home-vision__lead,
+.home-vision__statement,
+.home-vision__note,
+.home-vision__cta p,
+.home-vision__emphasis {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.home-vision__lead {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.2rem, 1.75vw, 1.55rem);
+  color: #a2281d;
+}
+
+.home-vision__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-vision__list li {
+  margin: 1rem 0;
+  font-size: clamp(1.05rem, 1.65vw, 1.4rem);
+  line-height: 1.9;
+  color: #a2281d;
+}
+
+.home-vision__emphasis {
+  margin: 1.8rem 0 0;
+  font-size: clamp(1.05rem, 1.65vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.9;
+  color: #7f2018;
+}
+
+.home-vision__statement {
+  margin: 0 auto 2.25rem;
+  max-width: 48rem;
+  font-size: clamp(1.1rem, 1.7vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.8;
+  color: #a2281d;
+}
+
+.home-vision__cta {
+  width: min(100%, 22rem);
+  margin: 0 auto 2rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 2.75rem;
+  background: #33302f;
+  box-shadow: 0 18px 36px rgba(31, 31, 31, 0.12);
+}
+
+.home-vision__cta p {
+  margin: 0.15rem 0;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  line-height: 1.7;
+  color: #ff8c1f;
+}
+
+.home-vision__note {
+  margin: 0;
+  text-align: right;
+  font-size: clamp(0.92rem, 1.2vw, 1.1rem);
+  font-style: italic;
+  color: #464b4f;
+}
+
 @media screen and (max-width: 736px) {
   #banner .inner.sinhala-page {
     max-width: 100%;
@@ -106,6 +211,31 @@
   #banner .more.sinhala-text,
   #banner .more {
     font-size: 1rem;
+  }
+
+  .home-vision {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .home-vision__divider {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-vision__header h1,
+  .home-vision__block,
+  .home-vision__statement,
+  .home-vision__cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-vision__cta {
+    width: min(100%, 17rem);
+    padding: 1.2rem 1rem;
+    border-radius: 2.25rem;
+  }
+
+  .home-vision__note {
+    text-align: center;
   }
 }
 

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './pages/Home';
 import Generic from './pages/Generic';
 import Elements from './pages/Elements';
-import Mankada from './pages/Mankada';
 import Thawulla from './pages/Thawulla';
 import WaeKandiya from './pages/WaeKandiya';
 import WaewThanawima from './pages/WaewThanawima';
@@ -23,7 +22,8 @@ function AppRoutes() {
   const [transitionStage, setTransitionStage] = useState('route-enter');
 
   useEffect(() => {
-    document.body.classList.toggle('landing', displayLocation.pathname === '/');
+    const isLandingPage = displayLocation.pathname === '/';
+    document.body.classList.toggle('landing', isLandingPage);
 
     return () => {
       document.body.classList.remove('landing');
@@ -54,7 +54,6 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/generic" element={<Generic />} />
         <Route path="/elements" element={<Elements />} />
-        <Route path="/mankada" element={<Mankada />} />
         <Route path="/thawulla" element={<Thawulla />} />
         <Route path="/wae-kandiya" element={<WaeKandiya />} />
         <Route path="/waew-thanawima" element={<WaewThanawima />} />

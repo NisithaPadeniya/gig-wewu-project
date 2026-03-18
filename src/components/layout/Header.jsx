@@ -6,7 +6,8 @@ import { useMenu } from '../../hooks/useMenu';
 const Header = React.memo(() => {
   const { toggleMenu, closeMenu } = useMenu();
   const { pathname } = useLocation();
-  const [isAlt, setIsAlt] = useState(pathname === '/');
+  const isHomeLikePage = pathname === '/';
+  const [isAlt, setIsAlt] = useState(isHomeLikePage);
 
   useEffect(() => {
     const isHomePage = pathname === '/';
@@ -61,7 +62,7 @@ const Header = React.memo(() => {
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/generic" onClick={closeMenu}>Generic</Link></li>
             <li><Link to="/elements" onClick={closeMenu}>Elements</Link></li>
-            <li><Link to="/mankada" onClick={closeMenu} className="sinhala-text" lang="si">මංකඩ</Link></li>
+            <li><Link to="/" onClick={closeMenu} className="sinhala-text" lang="si">මංකඩ</Link></li>
             <li><Link to="/thawulla" onClick={closeMenu} className="sinhala-text" lang="si">තාවුල්ල</Link></li>
             <li><Link to="/wae-kandiya" onClick={closeMenu} className="sinhala-text" lang="si">වෑ කණ්ඩිය</Link></li>
             <li><Link to="/waew-thanawima" onClick={closeMenu} className="sinhala-text" lang="si">වැව් තැනවීම</Link></li>
