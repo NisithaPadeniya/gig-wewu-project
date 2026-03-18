@@ -5,12 +5,15 @@ import Generic from './pages/Generic';
 import Elements from './pages/Elements';
 import Thawulla from './pages/Thawulla';
 import WaeKandiya from './pages/WaeKandiya';
+import WaeAngopanga from './pages/WaeAngopanga';
+import WaewKareGahaKola from './pages/WaewKareGahaKola';
 import WaewThanawima from './pages/WaewThanawima';
 import WawekaMahima from './pages/WawekaMahima';
 import EuropiyaWartha from './pages/EuropiyaWartha';
 import WaewNamawaliya from './pages/WaewNamawaliya';
 import PinPanduru from './pages/PinPanduru';
 import JathiyataShasanayata from './pages/JathiyataShasanayata';
+import JathiyataShasanayataPost from './pages/JathiyataShasanayataPost';
 import './App.css';
 import './assets/css/main.css';
 
@@ -22,23 +25,23 @@ function AppRoutes() {
   const [transitionStage, setTransitionStage] = useState('route-enter');
 
   useEffect(() => {
-    document.body.classList.add('is-preload');
+    const isLandingPage = displayLocation.pathname === '/';
+
+    if (isLandingPage) {
+      document.body.classList.add('is-preload');
+    } else {
+      document.body.classList.remove('is-preload');
+    }
 
     const timeoutId = window.setTimeout(() => {
       document.body.classList.remove('is-preload');
     }, 100);
 
-    return () => {
-      window.clearTimeout(timeoutId);
-      document.body.classList.remove('is-preload');
-    };
-  }, []);
-
-  useEffect(() => {
-    const isLandingPage = displayLocation.pathname === '/';
     document.body.classList.toggle('landing', isLandingPage);
 
     return () => {
+      window.clearTimeout(timeoutId);
+      document.body.classList.remove('is-preload');
       document.body.classList.remove('landing');
     };
   }, [displayLocation.pathname]);
@@ -69,12 +72,18 @@ function AppRoutes() {
         <Route path="/elements" element={<Elements />} />
         <Route path="/thawulla" element={<Thawulla />} />
         <Route path="/wae-kandiya" element={<WaeKandiya />} />
+        <Route path="/wae-angopanga" element={<WaeAngopanga />} />
+        <Route path="/waew-kare-gaha-kola" element={<WaewKareGahaKola />} />
         <Route path="/waew-thanawima" element={<WaewThanawima />} />
         <Route path="/waweka-mahima" element={<WawekaMahima />} />
         <Route path="/europiya-wartha" element={<EuropiyaWartha />} />
         <Route path="/waew-namawaliya" element={<WaewNamawaliya />} />
         <Route path="/pin-panduru" element={<PinPanduru />} />
         <Route path="/jathiyata-shasanayata" element={<JathiyataShasanayata />} />
+        <Route
+          path="/jathiyata-shasanayata/example-post-1"
+          element={<JathiyataShasanayataPost />}
+        />
       </Routes>
     </div>
   );
