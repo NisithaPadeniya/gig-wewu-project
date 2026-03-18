@@ -1,133 +1,107 @@
 # Gig Wewu Website
 
-A modern React implementation of the HTML5 UP Spectral theme, built with Vite for optimal performance.
+React + Vite implementation of a Sinhala content site built on top of the HTML5 UP Spectral theme.
 
-## Features
+## Overview
 
-- ⚡ **Vite** - Fast development and optimized production builds
-- ⚛️ **React 18** - Latest React with modern hooks and performance optimizations
-- 🧭 **React Router** - Client-side routing for multiple pages
-- 🎨 **Original Theme** - Faithful recreation of HTML5 UP Spectral design
-- 📱 **Responsive** - Mobile-first responsive design
-- 🎯 **Performance** - Optimized with React.memo, useCallback, and lazy loading
-- 🎨 **Tailwind Ready** - Tailwind CSS configured for future enhancements
+This project adapts the original Spectral HTML theme into a React application with routed content pages. The home page keeps the Spectral landing behavior and banner animation, while the inner pages are structured as long-form Sinhala content pages.
 
-## Project Structure
+## Stack
 
-```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── Header.jsx
-│   │   └── Footer.jsx
-│   └── sections/
-│       ├── Banner.jsx
-│       ├── SectionOne.jsx
-│       ├── SectionTwo.jsx
-│       ├── SectionThree.jsx
-│       └── CTA.jsx
-├── pages/
-│   ├── Home.jsx
-│   ├── Generic.jsx
-│   └── Elements.jsx
-├── hooks/
-│   ├── useMenu.js
-│   └── useSmoothScroll.js
-├── assets/
-│   └── css/
-└── App.jsx
-```
+- React
+- Vite
+- React Router
+- HTML5 UP Spectral theme assets
 
-## Getting Started
-
-### Prerequisites
-- Node.js (version 16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone or download this project
-2. Navigate to the project directory:
-   ```bash
-   cd gig-wewu-website
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:5173](http://localhost:5173) in your browser
-
-### Build for Production
+## Available Scripts
 
 ```bash
+npm install
+npm run dev
 npm run build
-```
-
-The built files will be in the `dist/` directory.
-
-### Preview Production Build
-
-```bash
 npm run preview
 ```
 
-## Customization
+If PowerShell blocks `npm`, use:
 
-### Content Updates
-- Update text content in the respective component files
-- Replace placeholder images in `public/images/`
-- Modify site title in `index.html`
+```bash
+npm.cmd run dev
+```
 
-### Styling
-- Original theme styles are in `src/assets/css/main.css`
-- Add custom styles using Tailwind CSS classes
-- Modify theme colors in `src/assets/css/main.css`
+## Main Routes
 
-### Adding New Sections
-1. Create new component in `src/components/sections/`
-2. Import and add to `src/pages/Home.jsx`
-3. Style using existing CSS classes or Tailwind
+- `/` - Home
+- `/thawulla` - තාවුල්ල
+- `/wae-kandiya` - වෑ කණ්ඩිය
+- `/wae-angopanga` - වැවෙ ක අංගෝපාංග
+- `/waew-kare-gaha-kola` - වැව් කරේ ගහ කොළ
+- `/waew-thanawima` - වැව් තැනවීම
+- `/waweka-mahima` - වැවේ ක මහිම
+- `/waew-namawaliya` - සිරි ලක වැව් සිතියම
+- `/pin-panduru` - පිං පඬුරු
+- `/jathiyata-shasanayata` - ජාතිය ට ශාසනය ට
+- `/jathiyata-shasanayata/example-post-1` - sample blog post
+- `/europiya-wartha` - යුරෝපීය වාර්තා
 
-## Performance Optimizations
+## Important Files
 
-- **React.memo** - Prevents unnecessary re-renders
-- **useCallback** - Memoizes event handlers
-- **Lazy Loading** - Route-based code splitting
-- **Image Optimization** - Proper alt tags and lazy loading ready
+- `src/App.jsx` - router and page transitions
+- `src/App.css` - project-level overrides and custom page styling
+- `src/components/layout/Header.jsx` - header and menu
+- `src/components/layout/Footer.jsx` - footer
+- `src/components/sections/Banner.jsx` - home banner
+- `src/components/sections/SectionOne.jsx` - main home content block
+- `src/components/sections/CTA.jsx` - lower home CTA section
+- `src/hooks/useSmoothScroll.js` - home banner scroll behavior
 
-## Browser Support
+## Content Pages
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+Most inner pages live in `src/pages/` and follow the Spectral `article` + `wrapper style5` structure.
 
-## Deployment
+Current content pages include:
 
-### Netlify
-1. Build the project: `npm run build`
-2. Upload the `dist/` folder to Netlify
+- `Home.jsx`
+- `Thawulla.jsx`
+- `WaeKandiya.jsx`
+- `WaeAngopanga.jsx`
+- `WaewKareGahaKola.jsx`
+- `WaewThanawima.jsx`
+- `WawekaMahima.jsx`
+- `WaewNamawaliya.jsx`
+- `PinPanduru.jsx`
+- `JathiyataShasanayata.jsx`
+- `JathiyataShasanayataPost.jsx`
 
-### Vercel
-1. Connect your GitHub repository
-2. Vercel will automatically detect Vite and build
+## Images
 
-### Other Platforms
-Upload the `dist/` folder to any static hosting service.
+Temporary page images currently use files from:
 
-## Credits
+- `public/images/banner.jpg`
+- `public/images/pic01.jpg`
+- `public/images/pic02.jpg`
+- `public/images/pic03.jpg`
+- `public/images/pic04.jpg`
+- `public/images/pic05.jpg`
 
-- **Original Theme**: [HTML5 UP Spectral](https://html5up.net/spectral)
-- **Built with**: React, Vite, React Router
-- **Icons**: FontAwesome
+Replace these with final images as needed. Most pages are already structured to accept image swaps without changing layout.
 
-## License
+## Styling Notes
 
-This project is free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+- Base Spectral styles are imported from `src/assets/css/main.css`
+- Project-specific overrides live in `src/App.css`
+- Sinhala typography is handled through `Noto Sans Sinhala`
+- Home page animation depends on the `landing` and `is-preload` body classes
+
+## Blog Pattern
+
+The `ජාතිය ට ශාසනය ට` section is set up as a simple blog listing:
+
+- list page: `src/pages/JathiyataShasanayata.jsx`
+- post page example: `src/pages/JathiyataShasanayataPost.jsx`
+
+To add more blog posts, create a new routed page and add a matching card/link on the listing page.
+
+## Notes
+
+- The project is theme-driven, so when updating layout or behavior, prefer checking the original `html5up-spectral` files first.
+- Some pages still contain placeholder routes or placeholder images and can be extended incrementally.
