@@ -224,6 +224,103 @@ body.landing #footer {
   backdrop-filter: blur(3px);
 }
 
+.thawulla-page header p {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.thawulla-section {
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+.thawulla-section + .thawulla-gallery,
+.thawulla-gallery + .thawulla-section {
+  margin-top: 4rem;
+}
+
+.thawulla-section--invocation {
+  max-width: 64rem;
+  text-align: center;
+}
+
+.thawulla-section--invocation p:first-child {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2e3842;
+}
+
+.thawulla-section h3 {
+  margin-bottom: 1.25rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.thawulla-section p {
+  margin: 0 0 1.1rem;
+  font-size: 1.02rem;
+  line-height: 2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.thawulla-section--closing {
+  padding-bottom: 1rem;
+}
+
+.thawulla-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 4rem auto 0;
+}
+
+.thawulla-gallery--reverse {
+  grid-template-columns: minmax(18rem, 0.75fr) minmax(0, 1.25fr);
+}
+
+.thawulla-gallery--reverse .thawulla-gallery__image {
+  order: 2;
+}
+
+.thawulla-gallery--reverse .thawulla-gallery__content {
+  order: 1;
+}
+
+.thawulla-gallery__image {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 3rem rgba(46, 56, 66, 0.14);
+}
+
+.thawulla-gallery__image img {
+  display: block;
+  width: 100%;
+  min-height: 19rem;
+  object-fit: cover;
+}
+
+.thawulla-gallery__content {
+  padding: 1.75rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.5rem;
+  background: rgba(46, 56, 66, 0.03);
+}
+
+.thawulla-gallery__content h4 {
+  margin-bottom: 0.75rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.thawulla-gallery__content p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: #4e4852;
+}
+
 @media screen and (max-width: 736px) {
   #banner .inner.sinhala-page {
     max-width: 100%;
@@ -273,6 +370,31 @@ body.landing #footer {
 
   body.landing #footer {
     backdrop-filter: none;
+  }
+
+  .thawulla-section + .thawulla-gallery,
+  .thawulla-gallery + .thawulla-section,
+  .thawulla-gallery {
+    margin-top: 2.5rem;
+  }
+
+  .thawulla-gallery,
+  .thawulla-gallery--reverse {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .thawulla-gallery--reverse .thawulla-gallery__image,
+  .thawulla-gallery--reverse .thawulla-gallery__content {
+    order: initial;
+  }
+
+  .thawulla-gallery__content {
+    padding: 1.25rem;
+  }
+
+  .thawulla-gallery__image img {
+    min-height: 14rem;
   }
 }
 
