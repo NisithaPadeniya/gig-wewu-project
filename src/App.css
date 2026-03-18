@@ -351,17 +351,19 @@ body.landing #footer {
 .waekandiya-links a {
   min-width: 12rem;
   padding: 0.9rem 1.2rem;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #2aa79c;
   border-radius: 999px;
   text-align: center;
   text-decoration: none;
-  color: #2e3842;
+  color: #ffffff;
+  background: linear-gradient(135deg, #21b2a6, #1b8f87);
+  box-shadow: 0 0.8rem 1.8rem rgba(33, 178, 166, 0.22);
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .waekandiya-links a:hover {
-  background: rgba(46, 56, 66, 0.05);
-  border-color: #b9b9b9;
+  background: linear-gradient(135deg, #2bc2b6, #21a39a);
+  border-color: #238f87;
 }
 
 .waekandiya-image {
