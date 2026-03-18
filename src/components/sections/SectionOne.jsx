@@ -33,20 +33,6 @@ const SectionOne = React.memo(() => {
             වහ වහා අවධානය යොමු කර විධි විධාන සකස් කළ යුතු වේ
           </p>
         </section>
-
-        <div className="home-vision__divider" aria-hidden="true" />
-
-        <p className="home-vision__statement">මේ රට වෙනුවෙන් සිදුකරන එක් සත්කාරයකි</p>
-
-        <div className="home-vision__divider" aria-hidden="true" />
-
-        <div className="home-vision__cta" aria-label="Invitation">
-          <p>එන්ට</p>
-          <p>වැව් තාවුල්ලට</p>
-          <p>ගොඩවෙලා කතා කරමු</p>
-        </div>
-
-        <p className="home-vision__note">තාම වැව බැඳලා ඉවර නෑ ලියන්ට දේවල් බොහොමයි</p>
       </div>
     </section>
   );

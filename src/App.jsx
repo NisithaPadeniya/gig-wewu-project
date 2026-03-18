@@ -22,6 +22,19 @@ function AppRoutes() {
   const [transitionStage, setTransitionStage] = useState('route-enter');
 
   useEffect(() => {
+    document.body.classList.add('is-preload');
+
+    const timeoutId = window.setTimeout(() => {
+      document.body.classList.remove('is-preload');
+    }, 100);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      document.body.classList.remove('is-preload');
+    };
+  }, []);
+
+  useEffect(() => {
     const isLandingPage = displayLocation.pathname === '/';
     document.body.classList.toggle('landing', isLandingPage);
 

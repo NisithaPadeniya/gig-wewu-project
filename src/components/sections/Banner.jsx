@@ -2,7 +2,10 @@ import React from 'react';
 import { useSmoothScroll } from '../../hooks/useSmoothScroll';
 
 const Banner = React.memo(() => {
-  const { scrollToElement } = useSmoothScroll(0);
+  const { scrollToElement } = useSmoothScroll(() => {
+    const header = document.getElementById('header');
+    return header ? header.offsetHeight : 0;
+  }, 1500);
 
   const handleScrollClick = (e) => {
     e.preventDefault();

@@ -3,6 +3,7 @@ import Header from '../components/layout/Header';
 import SectionOne from '../components/sections/SectionOne';
 import Footer from '../components/layout/Footer';
 import Banner from '../components/sections/Banner';
+import CTA from '../components/sections/CTA';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Banner/>
       <SectionOne />
+      <CTA />
       <Footer />
     </div>
   );
