@@ -502,6 +502,57 @@ body.landing #footer {
   background: linear-gradient(135deg, #2bc2b6, #21a39a);
 }
 
+.pinpanduru-intro {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.pinpanduru-intro h3 {
+  margin-bottom: 1.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.pinpanduru-intro p {
+  margin: 0 0 1.15rem;
+  font-size: 1.04rem;
+  line-height: 2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.waewnamawaliya-section {
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+.waewnamawaliya-section h3 {
+  margin-bottom: 1.4rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.waewnamawaliya-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  column-width: 15rem;
+  column-gap: 2rem;
+}
+
+.waewnamawaliya-list li {
+  margin: 0 0 0.8rem;
+  break-inside: avoid;
+  line-height: 1.8;
+}
+
+.waewnamawaliya-note {
+  margin-top: 2rem;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 @media screen and (max-width: 736px) {
   #banner .inner.sinhala-page {
     max-width: 100%;
@@ -613,6 +664,11 @@ body.landing #footer {
 
   .wawekamahima-link a {
     width: 100%;
+  }
+
+  .waewnamawaliya-list {
+    column-width: auto;
+    column-gap: 0;
   }
 }
 
